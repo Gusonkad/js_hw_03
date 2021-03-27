@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home work JS 02</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="task"><strong>Задание 1</strong>
+         <P>
+            Напиши скрипт, который, для объекта user, последовательно:
+добавляет поле mood со значением 'happy'
+заменяет значение hobby на 'skydiving'
+заменяет значение premium на false
+выводит содержимое объекта user в формате ключ:значение используя Object.keys() и for...of
+         </P>
+         <p class="task_content">
+            const user = {
+               name: 'Mango',
+               age: 20,
+               hobby: 'html',
+               premium: true,
+             };
+         </p>
+      </div>
+      <div class="task"> <strong>Задание 2</strong>
+         <p>
+            Напиши функцию countProps(obj), считающую кол-во свойств в объекте. Функция возвращает число - количество свойств.
+         </p>
+         <p class="task_content">
+            const countProps = function(obj) {
+               // твой код
+             };
+             /*
+              * Вызовы функции для проверки работоспособности твоей реализации.
+              */
+             console.log(countProps({})); // 0
+             console.log(countProps({ name: 'Mango', age: 2 })); // 2
+             console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
+         </p>
+      </div>
+      <div class="task"><strong>Задание 3</strong>
+         <p>
+            Напиши функцию findBestEmployee(employees), которая принимает объект сотрудников и возвращает имя самого продуктивного (который выполнил больше всех задач). Сотрудники и кол-во выполненых задач содержатся как свойства объекта в формате "имя":"кол-во задач".
+         </p>
+         <p class="task_content">
+            const findBestEmployee = function(employees) {
+               // твой код
+             };
+             /*
+              * Вызовы функции для проверки работоспособности твоей реализации.
+              */
+             console.log(
+               findBestEmployee({
+                 ann: 29,
+                 david: 35,
+                 helen: 1,
+                 lorence: 99,
+               }),
+             ); // lorence
+             console.log(
+               findBestEmployee({
+                 poly: 12,
+                 mango: 17,
+                 ajax: 4,
+               }),
+             ); // mango
+             console.log(
+               findBestEmployee({
+                 lux: 147,
+                 david: 21,
+                 kiwi: 19,
+                 chelsy: 38,
+               }),
+             ); // lux
+         </p>
+      </div>
+      <div class="task"><strong>Задание 4</strong>
+         <p>
+            Напиши функцию countTotalSalary(employees) принимающую объект зарплат. Функция считает общую сумму запрплаты работников и возращает ее. Каждое поле объекта, передаваемого в функцию, имеет вид "имя":"зарплата".
+         </p>
+         <p class="task_content">
+            const countTotalSalary = function(employees) {
+               // твой код
+             };
+             /*
+              * Вызовы функции для проверки работоспособности твоей реализации.
+              */
+             console.log(countTotalSalary({})); // 0
+             console.log(
+               countTotalSalary({
+                 mango: 100,
+                 poly: 150,
+                 alfred: 80,
+               }),
+             ); // 330
+             console.log(
+               countTotalSalary({
+                 kiwi: 200,
+                 lux: 50,
+                 chelsy: 150,
+               }),
+             ); // 400
+         </p>
+      </div>
+      <div class="task"><strong>Задание 5</strong>
+         <p>
+            Напиши функцию getAllPropValues(arr, prop), которая получает массив объектов и имя свойства. Возвращает массив значений определенного свойства prop из каждого объекта в массиве.
+         </p>
+         <p class="task_content">
+            const products = [
+  { name: 'Радар', price: 1300, quantity: 4 },
+  { name: 'Сканер', price: 2700, quantity: 3 },
+  { name: 'Дроид', price: 400, quantity: 7 },
+  { name: 'Захват', price: 1200, quantity: 2 },
+];
+const getAllPropValues = function(arr, prop) {
+  // твой код
+};
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроид', 'Захват']
+console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
+console.log(getAllPropValues(products, 'category')); // []
+         </p>
+      </div>
+      <div class="task"><strong>Задание 6</strong>
+         <p>
+            Напиши функцию calculateTotalPrice(allProdcuts, productName), которая получает массив объектов и имя продукта (значение свойства name). Возвращает общую стоимость продукта (цена * количество).
+Вызовы функции для проверки работоспособности твоей реализации.
+         </p>
+         <p class="task_content">
+            const products = [
+  { name: 'Радар', price: 1300, quantity: 4 },
+  { name: 'Сканер', price: 2700, quantity: 3 },
+  { name: 'Дроид', price: 400, quantity: 7 },
+  { name: 'Захват', price: 1200, quantity: 2 },
+];
+const calculateTotalPrice = function(allProdcuts, productName) {
+  // твой код
+};
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(calculateTotalPrice(products, 'Радар')); // 5200
+console.log(calculateTotalPrice(products, 'Дроид')); // 2800
+         </p>
+      </div>
+      <div class="task"><strong>Задание 7</strong>
+         <p>
+            дополнительное, выполнять не обязательно
+Напиши скрипт управления личным кабинетом интернет банка. Есть объект account в котором необходимо реализовать методы для работы с балансом и историей транзакций.
+         </p>
+         <p class="task_content">
+            
+         </p>
+      </div>
+   </div>
+   <!-- <script src="task_01.js" type="module"></script> -->
+   <!-- <script src="task_02.js" type="module"></script> -->
+   <!-- <script src="task_03.js" type="module"></script> -->
+   <!-- <script src="task_04.js" type="module"></script> -->
+   <!-- <script src="task_05.js" type="module"></script> -->
+   <!-- <script src="task_06.js" type="module"></script> -->
+   <script src="add_task_07.js" type="module"></script>
+
+</body>
+
+</html>

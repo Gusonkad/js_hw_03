@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Additional home work JS 03</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <article id="m3">
+      <div class="container">
+         <h2>Module 3</h2>
+         <div class="task"><strong>Доп задание 8</strong>
+            <P>
+               Написати ф-ю яка приймає в себе 2 параметра (обєкт замовлення і
+               обєкт з цінами товару) Ця ф-я має повернути ціну замовлення
+            </P>
+            <p class="task_content">
+               const productsPrice = { apple: 20, orange: 5, cheese: 12, pork:
+                  45, bread: 23 } const orderA = { apple: 5, cheese: 1, bread: 3 }
+                  const orderB = { orange: 10, pork: 2, bread: 1 }
+            </p>
+         </div>
+         <div class="task"> <strong>Доп задание 9</strong>
+            <p>
+               Написати ф-ю isObjectEmpty яка перевіряє чи обєкт пустий чи ні.
+               Якщо обєкт пустий то повернути true інакше false
+            </p>
+            <p class="task_content">
+               isObjectEmpty({}) // true
+       
+               isObjectEmpty({name: 'user, age: {21}}) // false
+            </p>
+         </div>
+         <div class="task"><strong>Доп задание 10</strong>
+            <p>
+               Створити обєкт піци з полями і методами.
+               В обєкті має бути такі поля і методи:
+               <li>поле для збереження розміру піци</li>
+               <li>поле для збереження списку добавок</li>
+               <li>поле для збереження списку соусів</li>
+               <li>
+                  метод для додавання добавки (Можна додати добавку якщо вона
+                  відсутня інакше показувати помилку)
+                </li>
+                <li>
+                  метод для додавання соусу (Можна додати соус якщо він відсутній
+                  інакше показувати, також помилка показувється якщо пробуємо
+                  видалити добавку, а там ще жодної немає)
+                </li>
+                <li>
+                  метод для видалення добавки (Можна видалити добавку якщо вона
+                  присутня в піці інакше показувати помилку, також помилка
+                  показувється якщо пробуємо видалити соус, а там ще жодного
+                  немає)
+                </li>
+                <li>
+                  метод для видалення соусу (Можна видалити соус якщо він
+                  присутній в піці інакше показувати помилку)
+                </li>
+                <li>
+                  метод для розрахунку загальної ціни піци (розмір + добавки +
+                  соуси) (ціна округлена до двох знаків після коми)
+                </li>
+                <li>
+                  метод для розрахунку загальної кількості калорій піци (розмір +
+                  добавки + соуси)
+                </li>
+                <li>
+                  метод який показує загальну інформацію про замовлення (ціну,
+                  калорії, список добавок і соусів) (Якщо піца валідна інакше
+                  показувати помилку)
+                </li>
+                <li>
+                  метод вибору розміру піци (Розмір піци можна змінити в будь-який
+                  момент)
+                </li>
+                <li>
+                  метод що показує час приготуванни в хвилинах в залежності від
+                  складності піци
+                </li>
+                <li>
+                  Метод валідації піци який поверне true якщо піца відповідає
+                  вимогам , а саме (вибраний розмір піци, є мінімум одна добавка,
+                  і мінімум один соус) інакше false (І виводить строку чого не
+                  вистачає (коржа, добавки, чи соусу)) (використовувати this)
+                </li>
+            </p>
+            <p class="task_content">
+               const SIZES = {
+                  
+                  BIG: { price: 25, cal: 100, time: 15 },
+                  
+                  SMALL : { price : 15, cal: 50, time: 7 },
+                  
+                  MEDIUM: { price : 15, cal: 50, time: 7 }
+                  
+                  },
+
+                  const STUFFING = {
+                     
+                     CHEESE: { price : 6.5, cal: 45, time: 2 },
+                     
+                     BEACON : { price : 10, cal: 70, time: 6 },
+                     
+                     TOMATO : { price : 12.1, cal: 4, time: 5 },
+                     
+                     CHICKEN : { price : 9.3, cal: 30, time: 5.1 }
+                     
+                     }
+
+                     const SAUCES = {
+                        
+                        MUSTARD: { price : 3, cal: 5, time: 1 },
+                        
+                        KETCHUP = { price : 4.2, cal: 20, time: 1.5 },
+                        
+                        BOLOGNESE = { price : 7.5, cal: 50, time: 3 }
+                        
+                        }
+            </p>
+         </div>
+         <div class="task"><strong>Доп задание 11</strong>
+            <p>
+               Створити всі методи і перевірити чи вони працюють
+            </p>
+         </div>
+            
+      </div>
+      <script src="add_task_08.js" type="module"></script>
+      <!-- <script src="add_task_09.js" type="module"></script> -->
+      <!-- <script src="add_task_10.js" type="module"></script> -->
+      <!-- <script src="add_task_11.js" type="module"></script> -->
+      
+   
+   </body>
+   
+   </html>
+
+
+
